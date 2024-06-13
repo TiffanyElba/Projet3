@@ -1,0 +1,45 @@
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    .fonctionnement--title {
+        @include size-title;
+        .fonctionnement--list {
+            list-style: none;
+        }
+    }
+}
+
+.fonctionnement--list {
+    list-style: none;
+    .fonctionnement_link--number {
+        position: relative;
+        top: 110px;
+        right: 20px;
+        border: 1px solid black;
+        border-radius: 50px;
+        border: none;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        font-size: 35px;
+        background: $purple;
+        color: white;
+
+    }   
+}
+.fonctionnement_link--btn {
+    width: 100%;
+    padding: 55px;
+    padding-left: 0px;
+    font-size: 45px;
+    border-radius: 40px;
+    border: none;
+    background-color: $background-btn;
+    @include border-shadow;
+    .fonctionnement_link--icon {
+        color: gray;
+        font-size: 60px;
+        position: relative;
+        margin-right: 80px;
+    }
+}

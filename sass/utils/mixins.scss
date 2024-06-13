@@ -1,0 +1,8 @@
+@mixin border-shadow {
+    box-shadow: 15px 14px 20px -8px rgba(138,136,136,0.86);
+}
+
+@mixin size-title {
+    font-size: 70px;
+    margin-left: 31px;
+}
