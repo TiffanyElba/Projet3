@@ -1,0 +1,26 @@
+
+footer {
+    background-color: #353535;
+    color: white;
+    margin: 0;
+    padding-bottom: 20px;
+    .logo_footer {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%);
+        margin-left: 15px;
+        margin-top: 50px;
+        width: 130px;
+    }
+    .list_footer {
+        list-style: none;
+        font-size: 20px;
+        padding: 0;
+        margin-left: 15px;
+        li {
+            margin-bottom: 10px;
+        }
+        .icon_footer {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+    }
+}

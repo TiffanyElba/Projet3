@@ -1,0 +1,20 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.header_section {
+    display: flex;
+    justify-content: center;
+    .header_section--img {
+        height: 40px;
+        margin-top: 20px;
+    }
+    .header_section--icon {
+        position: absolute;
+        left: 30px;
+        margin-top: 20px;
+        font-size: 27px;
+    }
+}

@@ -3,6 +3,7 @@
     flex-direction: column;
     .fonctionnement--title {
         @include size-title;
+        margin-top: 150px;
         .fonctionnement--list {
             list-style: none;
         }
