@@ -1,3 +1,302 @@
-h1 {
-    color: red;
- }
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.header_section {
+  display: flex;
+  justify-content: center;
+}
+.header_section .header_section--img {
+  height: 40px;
+  margin-top: 20px;
+}
+.header_section a {
+  color: black;
+}
+.header_section .header_section--icon {
+  position: absolute;
+  left: 30px;
+  margin-top: 20px;
+  font-size: 27px;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  margin: 0;
+  padding-bottom: 20px;
+}
+footer .logo_footer {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%);
+  margin-left: 15px;
+  margin-top: 50px;
+  width: 130px;
+}
+footer .list_footer {
+  list-style: none;
+  font-size: 20px;
+  padding: 0;
+  margin-left: 15px;
+}
+footer .list_footer li {
+  margin-bottom: 10px;
+}
+footer .list_footer .icon_footer {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.section_explore {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #F6F6F6;
+  padding-bottom: 80px;
+}
+.section_explore .section_explore--title {
+  margin-bottom: 0;
+  font-size: 70px;
+}
+
+.section_explore--p {
+  font-size: 50px;
+}
+
+.btn_explore {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  font-size: 35px;
+  border-radius: 50px;
+  padding: 30px 30px 30px 30px;
+  color: white;
+  border: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 1px -1px 22px 5px rgba(128, 117, 117, 0.3);
+}
+
+.btn_explore:hover {
+  background: linear-gradient(#ED87D1, #B876E0);
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+.fonctionnement .fonctionnement--title {
+  font-size: 35px;
+  margin-left: 15px;
+  margin-top: 150px;
+}
+.fonctionnement .fonctionnement--title .fonctionnement--list {
+  list-style: none;
+}
+
+.fonctionnement--list {
+  list-style: none;
+}
+.fonctionnement--list .fonctionnement_link--number {
+  position: relative;
+  top: 110px;
+  right: 20px;
+  border: 1px solid black;
+  border-radius: 50px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 35px;
+  background: #9356DC;
+  color: white;
+}
+
+.fonctionnement_link--btn {
+  width: 100%;
+  padding: 55px;
+  padding-left: 0px;
+  font-size: 45px;
+  border-radius: 40px;
+  border: none;
+  background-color: #F6F6F6;
+  box-shadow: 1px -1px 22px 5px rgba(128, 117, 117, 0.3);
+}
+.fonctionnement_link--btn .fonctionnement_link--icon {
+  color: gray;
+  font-size: 60px;
+  position: relative;
+  margin-right: 80px;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+}
+.restaurants .restaurants_title {
+  font-size: 35px;
+  margin-left: 15px;
+  margin-top: 150px;
+  padding-top: 90px;
+}
+.restaurants .restaurant_cards--link {
+  text-decoration: none;
+}
+
+.card {
+  background-color: white;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 50px;
+  border-radius: 50px;
+  padding-bottom: 20px;
+}
+.card img {
+  width: 100%;
+  height: 450px;
+  border-radius: 50px 50px 0 0;
+}
+
+.card-txt--title {
+  font-size: 40px;
+  margin-left: 20px;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.card-ville {
+  color: black;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 0;
+}
+
+.section_ville--element {
+  display: flex;
+  align-items: center;
+}
+
+.section_ville {
+  background-color: #EAEAEA;
+  margin-top: 30px;
+  box-shadow: 0px 15px 66px 3px rgb(115, 110, 115);
+  display: flex;
+  justify-content: center;
+}
+.section_ville .icon_location {
+  font-size: 35px;
+  padding-right: 30px;
+}
+.section_ville .ville {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.image_restaurant {
+  margin-top: 20px;
+  position: relative;
+}
+.image_restaurant img {
+  width: 100%;
+  height: 280px;
+}
+
+.menu {
+  padding-top: 20px;
+  border-radius: 50px;
+  background-color: #F2F2F2;
+  width: 100%;
+  position: absolute;
+  top: 33%;
+}
+.menu .restaurant_name {
+  margin-bottom: 50px;
+  font-size: 35px;
+  margin-left: 15px;
+}
+.menu .heart-icon {
+  position: absolute;
+  right: 50px;
+}
+
+.entrees {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.entrees .entrees--title {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.dish {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  border-radius: 23px;
+  box-shadow: 1px -1px 22px 5px rgba(128, 117, 117, 0.3);
+}
+.dish .dish--title {
+  margin: 0 0 5px 0;
+  font-size: 20px;
+}
+.dish .dish--description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+.dish .dish--description p {
+  margin: 0;
+}
+
+.plats {
+  margin: 50px 15px 30px 15px;
+}
+.plats .plats--title {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.desserts {
+  margin: 50px 15px 30px 15px;
+}
+.desserts .desserts--title {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.custom-hr {
+  border: none;
+  border-bottom: 4px solid #99E2D0;
+  width: 15%;
+  margin-left: 0;
+  padding-top: 0px;
+  margin-top: 0;
+}
+
+.btn_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 40px 0;
+}
+.btn_container .btn_commander {
+  width: 200px;
+  font-size: 20px;
+  border-radius: 25px;
+  padding: 15px 20px 15px 20px;
+  color: white;
+  border: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+.btn_container .btn_commander:hover {
+  background: linear-gradient(#ED87D1, #B876E0);
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+}/*# sourceMappingURL=index.css.map */

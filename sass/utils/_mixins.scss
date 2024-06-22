@@ -20,3 +20,7 @@
     background: linear-gradient(#FF79DA,#9356DC);
     @include border-shadow;
 }
+
+@mixin hover_btn {
+    background: linear-gradient(#ED87D1,#B876E0);
+}

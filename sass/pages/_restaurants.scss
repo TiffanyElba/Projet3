@@ -96,5 +96,8 @@
         border: none;
         background: linear-gradient(#FF79DA,#9356DC);
     }
+    .btn_commander:hover {
+        @include hover_btn;
+    }
 }
 

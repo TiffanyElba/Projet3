@@ -17,3 +17,7 @@
 .btn_explore {
     @include btn;
 }
+
+.btn_explore:hover {
+    @include hover_btn;
+}
