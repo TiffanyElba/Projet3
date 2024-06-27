@@ -1,5 +1,6 @@
 .restaurants {
     background-color: $background-btn;
+    padding-bottom: 40px;
     .restaurants_title {
         @include size-title;
         margin-top: 150px;
@@ -31,14 +32,6 @@
     }
 }
 
-.heart {
-    margin-right: 70px;
-    .heart-icon {
-        font-size: 50px;
-        color: black;
-    }
-}
-
 
 .card-content {
     display: flex;
@@ -58,4 +51,30 @@
     font-size: 30px;
     margin-left: 20px;
     margin-top: 0;
+}
+
+
+
+
+.heart-container {
+    display: inline-block;
+    position: relative;
+    margin-right: 70px;
+    .heart-icon {
+        font-size: 50px;
+        color: black; 
+        position: absolute;
+        opacity: 1;
+        
+    } 
+    .heart-icon-fill {
+        font-size: 50px;
+        position: relative;
+        color: #9747ff;
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+            transition: 0.6s ease-in;
+        }
+    }
 }
