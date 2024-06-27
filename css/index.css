@@ -80,6 +80,7 @@ footer .list_footer .icon_footer {
 
 .btn_explore:hover {
   background: linear-gradient(#ED87D1, #B876E0);
+  box-shadow: 0px 6px 39px 22px rgba(0, 0, 0, 0.1);
 }
 
 .fonctionnement {
@@ -334,6 +335,7 @@ footer .list_footer .icon_footer {
 }
 .btn_container .btn_commander:hover {
   background: linear-gradient(#ED87D1, #B876E0);
+  box-shadow: 0px 6px 39px 22px rgba(0, 0, 0, 0.1);
 }
 
 body {
