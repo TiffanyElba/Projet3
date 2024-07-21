@@ -53,6 +53,7 @@
     margin-top: 20px;
     padding: 15px 20px 15px 20px;
     border-radius: 23px;
+    position: relative;
     @include border-shadow;
     .dish--title {
         margin: 0 0 5px 0;
@@ -120,6 +121,4 @@
 }
 
 
-
-
-
+/***** coche de validation du plat *****/
