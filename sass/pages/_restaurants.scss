@@ -8,15 +8,16 @@
 }
 
 .menu {
+    margin-top: -100px;
     padding-top: 20px;
     border-radius: 50px 50px 0 0;
     background-color: #F2F2F2;
     width: 100%;
-    position: absolute;
-    top: 33%;
+    position: relative;
     .restaurant_name {
         margin-bottom: 50px;
-        @include size-title;
+        @include size-title_restau;
+        margin-left: 15px;
     }
 }
 .restaurant_heart { 

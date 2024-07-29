@@ -3,8 +3,11 @@
 }
 
 @mixin size-title {
+    font-size: 65px;
+}
+
+@mixin size-title_restau {
     font-size: 35px;
-    margin-left: 15px;
 }
 
 @mixin btn {

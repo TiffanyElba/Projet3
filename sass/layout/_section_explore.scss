@@ -8,16 +8,17 @@
         margin-bottom: 0;
         font-size: 70px;
     }
+    .section_explore--p {
+        font-size: 50px;
+    }
+    .btn_explore {
+        @include btn;
+        &:hover {
+            @include hover_btn;
+        }
+    }
 }
 
-.section_explore--p {
-    font-size: 50px;
-}
 
-.btn_explore {
-    @include btn;
-}
 
-.btn_explore:hover {
-    @include hover_btn;
-}
+

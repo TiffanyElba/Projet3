@@ -23,15 +23,17 @@
 }
 
 footer {
+  position: relative;
   background-color: #353535;
   color: white;
   margin: 0;
-  padding: 20px;
+  padding-left: 5px;
+  padding-bottom: 5px;
 }
 footer .logo_footer {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%);
   margin-left: 15px;
-  margin-top: 50px;
+  margin-top: 30px;
   width: 130px;
 }
 footer .list_footer {
@@ -41,7 +43,7 @@ footer .list_footer {
   margin-left: 15px;
 }
 footer .list_footer li {
-  margin-bottom: 10px;
+  gap: 10px;
 }
 footer .list_footer .icon_footer {
   font-size: 20px;
@@ -86,9 +88,9 @@ footer .list_footer .icon_footer {
   margin: 40px 40px 40px 40px;
 }
 .fonctionnement .fonctionnement--title {
-  font-size: 35px;
-  margin-left: 15px;
+  font-size: 65px;
   margin-top: 150px;
+  margin-left: 20px;
 }
 .fonctionnement .fonctionnement--list {
   list-style: none;
@@ -131,8 +133,8 @@ footer .list_footer .icon_footer {
   padding-bottom: 40px;
 }
 .restaurants .restaurants_title {
-  font-size: 35px;
-  margin-left: 15px;
+  font-size: 65px;
+  margin-left: 60px;
   margin-top: 150px;
   padding-top: 90px;
 }
@@ -237,12 +239,12 @@ footer .list_footer .icon_footer {
 }
 
 .menu {
+  margin-top: -100px;
   padding-top: 20px;
   border-radius: 50px 50px 0 0;
   background-color: #F2F2F2;
   width: 100%;
-  position: absolute;
-  top: 33%;
+  position: relative;
 }
 .menu .restaurant_name {
   margin-bottom: 50px;
@@ -591,6 +593,7 @@ footer .list_footer .icon_footer {
   .card-ville {
     font-size: 15px;
   }
+  /**** HEART ****/
   .heart-container {
     left: 470px;
     top: 330px;
@@ -608,12 +611,33 @@ footer .list_footer .icon_footer {
     align-items: end;
   }
   footer .logo_footer {
-    padding: 0 0 10px 90px;
+    padding: 0 0 30px 90px;
   }
   footer .list_footer {
     display: flex;
     gap: 30px;
+    margin: 90px 0 30px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .image_restaurant img {
+    height: 400px;
+  }
+  .menu {
+    margin-left: 140px;
+    width: 60%;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .restaurant_heart {
+    text-align: center;
+  }
+  .restaurant_heart .heart-container_ficherestau {
+    left: 390px;
+  }
+  footer {
     margin: 0;
+    padding: 0;
   }
 }
 .all_cards {
@@ -629,12 +653,12 @@ footer .list_footer .icon_footer {
   z-index: 1;
 }
 .heart-container .heart-icon {
-  font-size: 30px;
+  font-size: 35px;
   color: black;
   opacity: 1;
 }
 .heart-container .heart-icon-fill {
-  font-size: 30px;
+  font-size: 35px;
   opacity: 0;
   transition: 0.6s ease-in;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -651,6 +675,5 @@ footer .list_footer .icon_footer {
 }
 
 body {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }/*# sourceMappingURL=index.css.map */

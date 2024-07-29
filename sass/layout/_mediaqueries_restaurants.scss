@@ -1,0 +1,27 @@
+@media screen and (min-width: 1024px) {
+
+    .image_restaurant {
+        img {
+            height: 400px;
+        }
+    }
+
+    .menu {
+        margin-left: 140px;
+        width: 60%;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .restaurant_heart {
+        text-align: center;
+        .heart-container_ficherestau {
+            left: 390px;
+        }
+    }
+
+    footer {
+        margin: 0;
+        padding: 0;
+    }
+}

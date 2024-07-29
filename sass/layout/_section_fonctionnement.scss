@@ -5,15 +5,14 @@
     .fonctionnement--title {
         @include size-title;
         margin-top: 150px;
-        .fonctionnement--list {
-            list-style: none;
-        }
+        margin-left: 20px;
+    }
+    .fonctionnement--list {
+        list-style: none;
     }
 }
 
-.fonctionnement--list {
-    list-style: none;
-    .fonctionnement_link--number {
+.fonctionnement_link--number {
         position: relative;
         top: 110px;
         right: 20px;
@@ -26,9 +25,8 @@
         font-size: 35px;
         background: $purple;
         color: white;
+}   
 
-    }   
-}
 .fonctionnement_link--btn {
     width: 100%;
     padding: 55px;
