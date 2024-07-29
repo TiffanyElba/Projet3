@@ -238,7 +238,7 @@ footer .list_footer .icon_footer {
 
 .menu {
   padding-top: 20px;
-  border-radius: 50px;
+  border-radius: 50px 50px 0 0;
   background-color: #F2F2F2;
   width: 100%;
   position: absolute;
@@ -249,36 +249,40 @@ footer .list_footer .icon_footer {
   font-size: 35px;
   margin-left: 15px;
 }
-.menu .heart-icon {
+
+.restaurant_heart {
+  position: relative;
+}
+.restaurant_heart .heart-container_ficherestau {
+  display: inline-block;
   position: absolute;
-  right: 50px;
+  bottom: 5px;
+  right: 40px;
+}
+.restaurant_heart .heart-container_ficherestau .heart-icon {
+  font-size: 30px;
+  color: black;
+  position: absolute;
+  opacity: 1;
+}
+.restaurant_heart .heart-container_ficherestau .heart-icon-fill {
+  font-size: 30px;
+  position: relative;
+  opacity: 0;
+  transition: 0.6s ease-in;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.restaurant_heart .heart-container_ficherestau .heart-icon-fill:hover {
+  opacity: 1;
+}
+.restaurant_heart .heart-container_ficherestau .heart-icon-fill:not(:hover) {
+  opacity: 0;
 }
 
-/*
-.heart-container {
-    display: inline-block;
-    position: relative;
-    margin-right: 70px;
-    .heart-icon {
-        font-size: 50px;
-        color: black; 
-        position: absolute;
-        opacity: 1;
-    } 
-    .heart-icon-fill {
-        font-size: 50px;
-        position: relative;
-        opacity: 0;
-        transition: 0.6s ease-in;
-        &:hover {
-            opacity: 1;
-        }
-        &:not(:hover) {
-            opacity: 0; 
-        }
-    }
-}
-*/
 @keyframes fondu {
   0% {
     opacity: 0;
@@ -560,6 +564,7 @@ footer .list_footer .icon_footer {
   .restaurants .restaurant_cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .restaurants .restaurant_cards .restaurant_cards--link {
     width: 50%;
@@ -567,12 +572,13 @@ footer .list_footer .icon_footer {
   }
   .card {
     padding: 0;
-    width: 500px;
+    width: 530px;
     border-radius: 15px;
+    margin: 60px 0 0 0;
   }
   .card img {
-    height: 200px;
-    width: 500px;
+    height: 240px;
+    width: 530px;
     border-radius: 15px 15px 0 0;
   }
   .card .card_new {
@@ -586,13 +592,14 @@ footer .list_footer .icon_footer {
     font-size: 15px;
   }
   .heart-container {
-    margin-right: 20px;
+    left: 470px;
+    top: 330px;
   }
   .heart-container .heart-icon {
-    font-size: 25px;
+    font-size: 20px;
   }
   .heart-container .heart-icon-fill {
-    font-size: 25px;
+    font-size: 20px;
   }
   /**** FOOTER ****/
   footer {
@@ -638,7 +645,6 @@ footer .list_footer .icon_footer {
 }
 .heart-container .heart-icon-fill:hover {
   opacity: 1;
-  background-image: linear-gradient(#FF79DA, #9356DC);
 }
 .heart-container .heart-icon-fill:not(:hover) {
   opacity: 0;

@@ -9,7 +9,7 @@
 
 .menu {
     padding-top: 20px;
-    border-radius: 50px;
+    border-radius: 50px 50px 0 0;
     background-color: #F2F2F2;
     width: 100%;
     position: absolute;
@@ -18,11 +18,40 @@
         margin-bottom: 50px;
         @include size-title;
     }
-    .heart-icon {
+}
+.restaurant_heart { 
+    position: relative;
+    .heart-container_ficherestau {
+        display: inline-block;
         position: absolute;
-        right: 50px;
+        bottom: 5px;
+        right: 40px;
+        .heart-icon {
+            font-size: 30px;
+            color: black; 
+            position: absolute;
+            opacity: 1;
+        } 
+        .heart-icon-fill {
+            font-size: 30px;
+            position: relative;
+            opacity: 0;
+            transition: 0.6s ease-in;
+            background: $background-heart;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+            &:hover {
+                opacity: 1;
+            }
+            &:not(:hover) {
+                opacity: 0; 
+            }
+        }
     }
 }
+
 
 @keyframes fondu {
     0% {
