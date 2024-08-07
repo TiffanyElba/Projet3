@@ -23,17 +23,22 @@
     }
 }
 
+
 .dish:hover {
-    .check_price {
+    .check_price  {
         transform: translateX(-80px);
         transition: transform 0.4s ease-out;
         opacity: 1;
+        
     }
 }
 
-.dish:hover .price {
+.dish:hover .dish--price {
     transform: translateX(-80px);
-    transition: transform 0.4s ease-out;
-    
+    transition: transform 0.4s ease-out;  
+    margin-left: 100px; 
 }
 
+.dish:hover .dish--description {
+    width: calc(90% - 80px);
+}

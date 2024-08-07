@@ -77,7 +77,6 @@
 
 .dish {
     display: flex;
-    flex-direction: column;
     background-color: white;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -88,15 +87,24 @@
     .dish--title {
         margin: 0 0 5px 0;
         font-size: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .dish--description {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         font-size: 18px;
+        width: 90%;
+        display: inline-block;
         p {
             margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
+    }
+    .dish--price {
+        width: 10%;
+        justify-content: end;
     }
 }
 
