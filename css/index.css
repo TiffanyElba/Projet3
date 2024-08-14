@@ -34,6 +34,7 @@ footer .logo_footer {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%);
   margin-left: 15px;
   margin-top: 30px;
+  margin-right: 20px;
   width: 130px;
 }
 footer .list_footer {
@@ -88,7 +89,6 @@ footer .list_footer .icon_footer {
   margin: 40px 40px 40px 40px;
 }
 .fonctionnement .fonctionnement--title {
-  font-size: 65px;
   margin-top: 150px;
   margin-left: 20px;
 }
@@ -246,14 +246,15 @@ footer .list_footer .icon_footer {
   width: 100%;
   position: relative;
 }
-.menu .restaurant_name {
-  margin-bottom: 50px;
-  font-size: 35px;
-  margin-left: 15px;
-}
 
 .restaurant_heart {
   position: relative;
+  font-family: "Shrikhand";
+}
+.restaurant_heart .restaurant_name {
+  margin-bottom: 50px;
+  font-family: "Shrikhand";
+  margin-left: 15px;
 }
 .restaurant_heart .heart-container_ficherestau {
   display: inline-block;
@@ -307,7 +308,6 @@ footer .list_footer .icon_footer {
 
 .dish {
   display: flex;
-  flex-direction: column;
   background-color: white;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -319,15 +319,25 @@ footer .list_footer .icon_footer {
 .dish .dish--title {
   margin: 0 0 5px 0;
   font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .dish .dish--description {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-size: 18px;
+  width: 90%;
+  display: inline-block;
 }
 .dish .dish--description p {
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dish .dish--price {
+  margin-left: 50px;
+  margin-top: 5px;
+  justify-content: end;
 }
 
 .plats {
@@ -398,7 +408,7 @@ footer .list_footer .icon_footer {
   margin: auto;
   position: absolute;
   animation: fadeOut 1s ease 3s forwards;
-  left: 30%;
+  left: 20%;
   bottom: 5%;
 }
 
@@ -439,7 +449,6 @@ footer .list_footer .icon_footer {
   }
 }
 .content_accueil {
-  display: block;
   opacity: 0;
   animation: fadeIn 1s ease 3s forwards;
 }
@@ -458,7 +467,7 @@ footer .list_footer .icon_footer {
   position: absolute;
   right: -80px;
   top: 0px;
-  height: 80px;
+  height: 82px;
   transform: translateX(100%);
   transition: transform 0.4s ease-out, opacity 0.4s ease-out;
   opacity: 0;
@@ -480,9 +489,14 @@ footer .list_footer .icon_footer {
   opacity: 1;
 }
 
-.dish:hover .price {
+.dish:hover .dish--price {
   transform: translateX(-80px);
   transition: transform 0.4s ease-out;
+  margin-left: 100px;
+}
+
+.dish:hover .dish--description {
+  width: calc(90% - 80px);
 }
 
 @media screen and (min-width: 1024px) {
@@ -611,12 +625,35 @@ footer .list_footer .icon_footer {
     align-items: end;
   }
   footer .logo_footer {
-    padding: 0 0 30px 90px;
+    padding: 0 10px 30px 90px;
   }
   footer .list_footer {
     display: flex;
     gap: 30px;
     margin: 90px 0 30px 0;
+  }
+  /**** LOADER ****/
+  .loader {
+    left: 450px;
+  }
+}
+@media screen and (min-width: 430px) {
+  /**** RESTAURANTS ****/
+  .card {
+    width: 850px;
+  }
+  .card img {
+    height: 440px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+  .card .card_new {
+    font-size: 35px;
+  }
+  /**** HEART ****/
+  .heart-container {
+    left: 800px;
+    top: 510px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -638,6 +675,38 @@ footer .list_footer .icon_footer {
   footer {
     margin: 0;
     padding: 0;
+  }
+}
+/**** TABLETTE ****/
+@media only screen and (min-device-width: 765px) and (max-device-width: 1024px) {
+  .menu {
+    left: 150px;
+    width: 45%;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .dish {
+    text-overflow: ellipsis;
+  }
+  .restaurant_heart .restaurant_name {
+    text-align: center;
+  }
+  .restaurant_heart .heart-container_ficherestau {
+    right: 20px;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1250px) {
+  .menu {
+    left: 0px;
+    width: 50%;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .dish {
+    text-overflow: ellipsis;
+  }
+  .dish .dish--description2 {
+    text-overflow: ellipsis;
   }
 }
 .all_cards {
@@ -675,5 +744,7 @@ footer .list_footer .icon_footer {
 }
 
 body {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto";
 }/*# sourceMappingURL=index.css.map */
