@@ -3,7 +3,6 @@
     flex-direction: column;
     margin: 40px 40px 40px 40px;
     .fonctionnement--title {
-        @include size-title;
         margin-top: 150px;
         margin-left: 20px;
     }

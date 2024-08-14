@@ -25,3 +25,49 @@
         padding: 0;
     }
 }
+
+
+
+/**** TABLETTE ****/
+@media only screen and (min-device-width : 765px) and (max-device-width : 1024px) {
+        .menu {
+            left: 150px;
+            width: 45%;
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+
+        .dish {
+            text-overflow: ellipsis;
+        }
+
+        .restaurant_heart {
+            .restaurant_name {
+                text-align: center;
+            }
+            .heart-container_ficherestau {
+                right: 20px;
+            }
+        }
+    }
+
+
+
+
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1250px) {
+        .menu {
+            left: 0px;
+            width: 50%;
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+
+        .dish {
+            text-overflow: ellipsis;
+            .dish--description2 {
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+

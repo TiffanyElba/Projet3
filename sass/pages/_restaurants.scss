@@ -14,14 +14,15 @@
     background-color: #F2F2F2;
     width: 100%;
     position: relative;
-    .restaurant_name {
-        margin-bottom: 50px;
-        @include size-title_restau;
-        margin-left: 15px;
-    }
 }
 .restaurant_heart { 
     position: relative;
+    @include fontfamily_titre;
+    .restaurant_name {
+        margin-bottom: 50px;
+        @include fontfamily_titre;
+        margin-left: 15px;
+    }
     .heart-container_ficherestau {
         display: inline-block;
         position: absolute;

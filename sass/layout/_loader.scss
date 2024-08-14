@@ -1,3 +1,4 @@
+
 .accroche_loader {
     font-size: 40px;
     width: 150%;
@@ -14,7 +15,7 @@
     margin: auto;
     position: absolute;
     animation: fadeOut 1s ease 3s forwards;
-    left: 30%;
+    left: 20%;
     bottom: 5%;
 }
 
@@ -55,7 +56,6 @@
 }
 
 .content_accueil {
-    display: block;
     opacity: 0;
     animation: fadeIn 1s ease 3s forwards;
 }
@@ -63,4 +63,3 @@
 @keyframes fadeIn {
     to { opacity: 1; }
 }
-

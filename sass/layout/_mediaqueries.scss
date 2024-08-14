@@ -88,8 +88,7 @@
             justify-content: space-between;
             .restaurant_cards--link {
                 width: 50%;
-                justify-content: flex-end;
-                
+                justify-content: flex-end;  
             }
         }
     }
@@ -135,7 +134,7 @@
         flex-direction: row-reverse;
         align-items: end;
         .logo_footer {
-            padding: 0 0 30px 90px;
+            padding: 0 10px 30px 90px;
         }
         .list_footer {
             display: flex;
@@ -143,4 +142,38 @@
             margin: 90px 0 30px 0;
         }
     }
+
+    /**** LOADER ****/
+    .loader {
+        left: 450px;
+    }
 }
+
+
+
+@media screen and (min-width: 430px) {
+    /**** RESTAURANTS ****/
+    .card {
+        width: 850px;
+        img {
+            height: 440px;
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+        }
+    }
+
+    .card {
+        .card_new {
+            font-size: 35px;
+        }
+    }
+    
+
+    /**** HEART ****/
+    .heart-container {
+        left: 800px;
+        top: 510px;
+    }
+   
+}
+
