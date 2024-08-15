@@ -28,7 +28,8 @@ footer {
   color: white;
   margin: 0;
   padding-left: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+  margin-bottom: -10px;
 }
 footer .logo_footer {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%);
@@ -45,6 +46,10 @@ footer .list_footer {
 }
 footer .list_footer li {
   gap: 10px;
+}
+footer .list_footer li a {
+  text-decoration: none;
+  color: white;
 }
 footer .list_footer .icon_footer {
   font-size: 20px;
@@ -89,6 +94,7 @@ footer .list_footer .icon_footer {
   margin: 40px 40px 40px 40px;
 }
 .fonctionnement .fonctionnement--title {
+  font-size: 65px;
   margin-top: 150px;
   margin-left: 20px;
 }
@@ -103,10 +109,10 @@ footer .list_footer .icon_footer {
   border: 1px solid black;
   border-radius: 50px;
   border: none;
-  width: 50px;
-  height: 50px;
+  width: 47px;
+  height: 45px;
   text-align: center;
-  font-size: 35px;
+  font-size: 38px;
   background: #9356DC;
   color: white;
 }
@@ -126,6 +132,10 @@ footer .list_footer .icon_footer {
   font-size: 60px;
   position: relative;
   margin-right: 80px;
+}
+
+.fonctionnement_link--btn:hover .fonctionnement_link--icon {
+  color: #9357DC;
 }
 
 .restaurants {
@@ -240,6 +250,7 @@ footer .list_footer .icon_footer {
 
 .menu {
   margin-top: -100px;
+  margin-bottom: 100px;
   padding-top: 20px;
   border-radius: 50px 50px 0 0;
   background-color: #F2F2F2;
@@ -656,6 +667,27 @@ footer .list_footer .icon_footer {
     top: 510px;
   }
 }
+@media screen and (min-width: 1025px) and (max-width: 1950px) {
+  /**** RESTAURANTS ****/
+  .heart-container {
+    left: 480px;
+    top: 350px;
+  }
+  .card {
+    width: 550px;
+  }
+  .card img {
+    height: 250px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+  .card .card_new {
+    font-size: 20px;
+  }
+  .footer {
+    margin-bottom: -10px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .image_restaurant img {
     height: 400px;
@@ -671,10 +703,6 @@ footer .list_footer .icon_footer {
   }
   .restaurant_heart .heart-container_ficherestau {
     left: 390px;
-  }
-  footer {
-    margin: 0;
-    padding: 0;
   }
 }
 /**** TABLETTE ****/

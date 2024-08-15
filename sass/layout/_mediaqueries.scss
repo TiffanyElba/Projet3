@@ -149,8 +149,6 @@
     }
 }
 
-
-
 @media screen and (min-width: 430px) {
     /**** RESTAURANTS ****/
     .card {
@@ -167,13 +165,34 @@
             font-size: 35px;
         }
     }
-    
 
     /**** HEART ****/
     .heart-container {
         left: 800px;
         top: 510px;
     }
-   
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1950px) {
+    /**** RESTAURANTS ****/
+    .heart-container {
+        left: 480px;
+        top: 350px;
+    }
+    .card {
+        width: 550px;
+        img {
+            height: 250px;
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+        }
+        .card_new {
+            font-size: 20px;
+        }
+    }
+
+    .footer {
+        margin-bottom: -10px;
+    }
+
+}
