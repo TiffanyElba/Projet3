@@ -510,6 +510,25 @@ footer .list_footer .icon_footer {
   width: calc(90% - 80px);
 }
 
+@media screen and (min-width: 430px) {
+  /**** RESTAURANTS ****/
+  .card {
+    width: 850px;
+  }
+  .card img {
+    height: 440px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+  .card .card_new {
+    font-size: 35px;
+  }
+  /**** HEART ****/
+  .heart-container {
+    left: 800px;
+    top: 510px;
+  }
+}
 @media screen and (min-width: 1024px) {
   header .logo {
     height: 30px;
@@ -645,29 +664,23 @@ footer .list_footer .icon_footer {
   }
   /**** LOADER ****/
   .loader {
-    left: 450px;
+    left: 250px;
   }
 }
-@media screen and (min-width: 430px) {
-  /**** RESTAURANTS ****/
+@media screen and (min-width: 1025px) and (max-width: 1350px) {
   .card {
-    width: 850px;
+    width: 400px;
   }
   .card img {
-    height: 440px;
-    width: 100%;
-    border-radius: 15px 15px 0 0;
-  }
-  .card .card_new {
-    font-size: 35px;
+    width: 400px;
   }
   /**** HEART ****/
   .heart-container {
-    left: 800px;
-    top: 510px;
+    left: 340px;
+    top: 330px;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1950px) {
+@media screen and (min-width: 1350px) and (max-width: 1950px) {
   /**** RESTAURANTS ****/
   .heart-container {
     left: 480px;
@@ -684,8 +697,9 @@ footer .list_footer .icon_footer {
   .card .card_new {
     font-size: 20px;
   }
-  .footer {
-    margin-bottom: -10px;
+  /**** LOADER ****/
+  .loader {
+    left: 450px;
   }
 }
 @media screen and (min-width: 1024px) {
