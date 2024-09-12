@@ -3,13 +3,14 @@
     flex-direction: column;
     text-align: center;
     background-color: #F6F6F6;
-    padding-bottom: 80px;
+    padding-bottom: 65px;
     .section_explore--title {
-        margin-bottom: 0;
-        font-size: 70px;
+        margin: 30px 20px 0 20px;
+        @include size-title;
     }
     .section_explore--p {
-        font-size: 50px;
+        font-size: 18px;
+        font-weight: 300;
     }
     .btn_explore {
         @include btn;

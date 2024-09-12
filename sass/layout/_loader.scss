@@ -1,22 +1,20 @@
 
 .accroche_loader {
-    font-size: 40px;
-    width: 150%;
+    font-size: 25px;
+    width: 100%;
     text-align: center;
 }
 
 .loader {
-    width: 600px;
+    bottom: 300px;
+    width: 95%;
+    margin-left: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: auto;
+    height: auto;
     position: absolute;
+
     animation: fadeOut 1s ease 3s forwards;
-    left: 20%;
-    bottom: 5%;
 }
 
 @keyframes fadeOut {

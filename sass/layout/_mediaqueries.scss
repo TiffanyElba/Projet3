@@ -1,38 +1,15 @@
-@media screen and (min-width: 430px) {
-    /**** RESTAURANTS ****/
-    .card {
-        width: 850px;
-        img {
-            height: 440px;
-            width: 100%;
-            border-radius: 15px 15px 0 0;
-        }
-    }
 
-    .card {
-        .card_new {
-            font-size: 35px;
-        }
-    }
-
-    /**** HEART ****/
-    .heart-container {
-        left: 800px;
-        top: 510px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     header {
         .logo {
             height: 30px;
-            margin: 20px 0 0 15px;
+            margin: 20px 0 20px 15px;
         }
     }
 
     /**** RECHERCHE VILLE ****/
     .section_ville {
-        box-shadow: none;
+        filter: none;
         .icon_location {
             font-size: 15px;
         }
@@ -56,7 +33,6 @@
         .btn_explore {
             font-size: 15px;
             padding: 13px;
-            width: 20%;
         }
     }
 
@@ -72,7 +48,6 @@
             font-size: 25px;
         }
         .fonctionnement--list {
-            display: flex;
             gap: 40px;
             padding-left: 20px;
             .fonctionnement_link {
@@ -108,7 +83,7 @@
         .restaurant_cards {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
             .restaurant_cards--link {
                 width: 50%;
                 justify-content: flex-end;  
@@ -137,6 +112,7 @@
     }
     .card-ville {
         font-size: 15px;
+        margin-bottom: 20px;
     }
 
     /**** HEART ****/
@@ -148,6 +124,109 @@
         }
         .heart-icon-fill {
             font-size: 20px;
+            left: -150px;
+        }
+    }
+
+    /**** FOOTER ****/
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: end;
+        .logo_footer {
+            padding: 0 10px 30px 90px;
+        }
+        .list_footer {
+            display: flex;
+            gap: 30px;
+            margin: 90px 0 30px 20px;
+        }
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+    .section_explore {
+        .btn_explore {
+            width: 25%;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+   /**** EXPLORE ****/
+   .section_explore {
+    .btn_explore {
+        width: 20%;
+    }
+   }
+    /**** FONCTIONNEMENT ****/
+    .fonctionnement {
+        margin-bottom: 30px;
+    
+        .fonctionnement--list {
+            display: flex;
+            .fonctionnement_link {
+                width: 100%;
+                padding: 5px;
+                .fonctionnement_link--number {
+                    width: 22px;
+                    height: 20px;
+                    font-size: 17px;
+                    top: 36px;
+                }
+                .fonctionnement_link--btn {
+                    .fonctionnement_link--icon {
+                        font-size: 13px;
+                        margin-right: 9px;
+                    }
+                }
+            }
+        }
+    }
+
+    /**** RESTAURANTS ****/
+    .restaurants {
+        .restaurant_cards {
+            margin: 0;
+            justify-content: space-between;
+        }
+    }
+    
+    .card {
+        padding: 0;
+        width: 100%;
+        border-radius: 15px;
+        img {
+            height: 240px;
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+        }
+        .card_new {
+            font-size: 15px;
+            right: 30px;
+        }
+    }
+
+    .card-txt--title {
+        font-size: 25px;
+    }
+    .card-ville {
+        font-size: 15px;
+    }
+
+    /**** HEART ****/
+    .heart-container {
+        left: 450px;
+        top: 330px;
+        .heart-icon {
+            font-size: 20px;
+            right: 150px;
+        }
+        .heart-icon-fill {
+            font-size: 20px;
+            top: -23px;
         }
     }
 
@@ -166,48 +245,11 @@
         }
     }
 
-    /**** LOADER ****/
-    .loader {
-        left: 250px;
-    }
 }
 
 
-@media screen and (min-width: 1025px) and (max-width: 1350px) {
+@media screen and (min-width: 1440px) {
     .card {
-        width: 400px;
-        img {
-            width: 400px;
-        }
-    }
-
-    /**** HEART ****/
-    .heart-container {
-        left: 340px;
-        top: 330px;
-    }
-}
-
-@media screen and (min-width: 1350px) and (max-width: 1950px) {
-    /**** RESTAURANTS ****/
-    .heart-container {
-        left: 480px;
-        top: 350px;
-    }
-    .card {
-        width: 550px;
-        img {
-            height: 250px;
-            width: 100%;
-            border-radius: 15px 15px 0 0;
-        }
-        .card_new {
-            font-size: 20px;
-        }
-    }
-
-    /**** LOADER ****/
-    .loader {
-        left: 450px;
+        width: 100%;
     }
 }

@@ -1,46 +1,47 @@
 .fonctionnement {
     display: flex;
     flex-direction: column;
-    margin: 40px 40px 40px 40px;
+    margin: 40px 15px 40px 15px;
     .fonctionnement--title {
         @include size-title;
-        margin-top: 150px;
-        margin-left: 20px;
+        margin: 25px 0 0 0;
     }
     .fonctionnement--list {
         list-style: none;
+        padding: 0;
+        margin-left: 20px;
     }
 }
 
 .fonctionnement_link--number {
-        position: relative;
-        top: 110px;
-        right: 20px;
-        border: 1px solid black;
-        border-radius: 50px;
-        border: none;
-        width: 47px;
-        height: 45px;
-        text-align: center;
-        font-size: 38px;
-        background: $purple;
-        color: white;
+    position: relative;
+    right: 15px;
+    border: 1px solid black;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    background: #9356DC;
+    color: white;
+    width: 26px;
+    height: 25px;
+    font-size: 20px;
+    top: 54px;
 }   
 
 .fonctionnement_link--btn {
     width: 100%;
-    padding: 55px;
-    padding-left: 0px;
-    font-size: 45px;
-    border-radius: 40px;
+    border-radius: 17px;
     border: none;
     background-color: $background-btn;
     @include border-shadow;
+    font-size: 17px;
+    padding: 30px;
+    
     .fonctionnement_link--icon {
         color: gray;
-        font-size: 60px;
         position: relative;
-        margin-right: 80px;
+        font-size: 20px;
+        margin-right: 30px;
     }
 }
 
