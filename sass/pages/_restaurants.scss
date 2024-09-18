@@ -94,7 +94,7 @@
     }
     .dish--description {
         font-size: 18px;
-        width: 90%;
+        width: calc(100% - 48px);
         display: inline-block;
         p {
             margin: 0;

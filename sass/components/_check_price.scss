@@ -36,6 +36,10 @@
     transition: transform 0.4s ease-out;
 }
 
-.dish:hover .dish--description {
-    width: calc(90% - 75px);
+.dish:hover .dish--title {
+    width: calc(100% - 123px);
+}
+
+.dish:hover .dish--description p {
+    width: calc(100% - 123px);
 }

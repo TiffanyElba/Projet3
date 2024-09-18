@@ -175,6 +175,8 @@ footer .list_footer .icon_footer {
 .card img {
   width: 100%;
   height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 
@@ -323,7 +325,7 @@ footer .list_footer .icon_footer {
 }
 .dish .dish--description {
   font-size: 18px;
-  width: 90%;
+  width: calc(100% - 48px);
   display: inline-block;
 }
 .dish .dish--description p {
@@ -486,8 +488,12 @@ footer .list_footer .icon_footer {
   transition: transform 0.4s ease-out;
 }
 
-.dish:hover .dish--description {
-  width: calc(90% - 75px);
+.dish:hover .dish--title {
+  width: calc(100% - 123px);
+}
+
+.dish:hover .dish--description p {
+  width: calc(100% - 123px);
 }
 
 @media screen and (min-width: 768px) {
@@ -598,16 +604,11 @@ footer .list_footer .icon_footer {
     margin-bottom: 20px;
   }
   /**** HEART ****/
-  .heart-container {
-    left: 470px;
-    top: 330px;
-  }
   .heart-container .heart-icon {
     font-size: 20px;
   }
   .heart-container .heart-icon-fill {
     font-size: 20px;
-    left: -150px;
   }
   /**** FOOTER ****/
   footer {
@@ -656,6 +657,9 @@ footer .list_footer .icon_footer {
     margin-right: 9px;
   }
   /**** RESTAURANTS ****/
+  .all_cards {
+    width: 45%;
+  }
   .restaurants .restaurant_cards {
     margin: 0;
     justify-content: space-between;
@@ -666,9 +670,11 @@ footer .list_footer .icon_footer {
     border-radius: 15px;
   }
   .card img {
-    height: 240px;
+    height: 200px;
     width: 100%;
     border-radius: 15px 15px 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .card .card_new {
     font-size: 15px;
@@ -679,19 +685,6 @@ footer .list_footer .icon_footer {
   }
   .card-ville {
     font-size: 15px;
-  }
-  /**** HEART ****/
-  .heart-container {
-    left: 450px;
-    top: 330px;
-  }
-  .heart-container .heart-icon {
-    font-size: 20px;
-    right: 150px;
-  }
-  .heart-container .heart-icon-fill {
-    font-size: 20px;
-    top: -23px;
   }
   /**** FOOTER ****/
   footer {
@@ -711,6 +704,12 @@ footer .list_footer .icon_footer {
 @media screen and (min-width: 1440px) {
   .card {
     width: 100%;
+  }
+  .heart-container .heart-icon {
+    right: -10px;
+  }
+  .heart-container .heart-icon-fill {
+    left: -19px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -751,21 +750,21 @@ footer .list_footer .icon_footer {
 .heart-container {
   display: inline-block;
   position: absolute;
-  right: 5px;
-  bottom: 45px;
+  right: 19px;
+  bottom: 40px;
   z-index: 1;
 }
 .heart-container .heart-icon {
   position: relative;
-  font-size: 22px;
+  font-size: 25px;
   color: black;
   opacity: 1;
 }
 .heart-container .heart-icon-fill {
   position: relative;
-  font-size: 22px;
+  font-size: 25px;
   opacity: 0;
-  right: 26px;
+  right: 29px;
   transition: 0.6s ease-in;
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;

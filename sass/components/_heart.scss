@@ -5,20 +5,20 @@
 .heart-container {
     display: inline-block;
     position: absolute;
-    right: 5px;
-    bottom: 45px;
+    right: 19px;
+    bottom: 40px;
     z-index: 1;
     .heart-icon {
         position: relative;
-        font-size: 22px;
+        font-size: 25px;
         color: black; 
         opacity: 1;
     } 
     .heart-icon-fill {
         position: relative;
-        font-size: 22px;
+        font-size: 25px;
         opacity: 0;
-        right: 26px;
+        right: 29px;
         transition: 0.6s ease-in;
         background: $background-heart;
         -webkit-background-clip: text;

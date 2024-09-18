@@ -117,14 +117,11 @@
 
     /**** HEART ****/
     .heart-container {
-        left: 470px;
-        top: 330px;
         .heart-icon {
             font-size: 20px;
         }
         .heart-icon-fill {
             font-size: 20px;
-            left: -150px;
         }
     }
 
@@ -187,6 +184,10 @@
     }
 
     /**** RESTAURANTS ****/
+
+    .all_cards {
+        width: 45%;
+    }
     .restaurants {
         .restaurant_cards {
             margin: 0;
@@ -199,9 +200,10 @@
         width: 100%;
         border-radius: 15px;
         img {
-            height: 240px;
+            height: 200px;
             width: 100%;
             border-radius: 15px 15px 0 0;
+            object-fit: cover;
         }
         .card_new {
             font-size: 15px;
@@ -216,19 +218,6 @@
         font-size: 15px;
     }
 
-    /**** HEART ****/
-    .heart-container {
-        left: 450px;
-        top: 330px;
-        .heart-icon {
-            font-size: 20px;
-            right: 150px;
-        }
-        .heart-icon-fill {
-            font-size: 20px;
-            top: -23px;
-        }
-    }
 
     /**** FOOTER ****/
     footer {
@@ -251,5 +240,14 @@
 @media screen and (min-width: 1440px) {
     .card {
         width: 100%;
+    }
+
+    .heart-container {
+        .heart-icon {
+            right: -10px;
+        }
+        .heart-icon-fill {
+            left: -19px;
+        }
     }
 }
